@@ -32,6 +32,35 @@
 		}
 
 
+		/*** BANNERS & CUSTOM FUNCTIONS ***/
+
+		$('.banner div.wrapper').transe({
+		    0: {
+		        top: '0%'
+		    },
+		    500: {
+		        top: '50%'
+		    }
+		});
+
+		$('.banner img').transe({
+		    0: {
+		        transform: 'scale(1)'
+		    },
+		    750: {
+		        transform: 'scale(2)'
+		    }
+		});
+
+		$('.topimg').transe({
+		    0: {
+		        opacity: '1'
+		    },
+		    300: {
+		        opacity: '0'
+		    }
+		});
+
 	});
 
 })(jQuery);

@@ -1,5 +1,5 @@
 /*
-Theme Name: Tema Base TDC
+Theme Name: Vencom
 Theme URI: http://tallerdecodigo.com
 Author: Pablo Covarrubias
 Author URI: http://tallerdecodigo.com
@@ -15,7 +15,7 @@ Copyright 2011 Yahoo! Inc. All rights reserved.
 Licensed under the BSD License.
 http://yuilibrary.com/license/
 */
-html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}
 
 
 /*
@@ -54,6 +54,19 @@ figure {margin: 0;}
 
 /*** FONT FACE ***/
 
+@font-face {
+    font-family:'FuturaFont';
+    src:url('fonts/FuturaStd-Medium.otf');
+    font-weight:400;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:'FuturaFont';
+    src:url('fonts/FuturaStd-Bold.otf');
+    font-weight:700;
+    font-style:normal;
+}
 
 /*** SIZING WITH REM ***/
 html { font-size: 62.5%; } 
@@ -68,6 +81,167 @@ h1   { font-size: 24px; font-size: 2.4rem; } /* =24px */
 
 .hidden{display: none!important;}
 
-
-
 /*** GENERAL ***/
+
+body {font-family:'Roboto', sans-serif; min-width:1024px; font-weight:400; color:#808080; text-align:center;}
+
+.wrapper {position:relative; display:inline-block; width:90%; max-width:940px; text-align:left;}
+
+sub {position:relative; top:-10px; font-size:75%;}
+
+section {width:100%; min-width:1024px; font-size:2.16rem; letter-spacing:0.03rem;}
+
+header {position:fixed; background:#FFF; width:100%; min-width:1024px; height:96px; left:0px; top:0px; color:#000; font-family:'FuturaFont'; font-weight:400; z-index:200;}
+
+header a {text-decoration:none; color:inherit; margin:29px;}
+
+header nav {float:right; height:79px; line-height:132px; border-left:1px solid #dd443e; padding-left:20px;}
+
+footer {background:#222d54; color:#FFF; width:100%; min-width:1024px; height:106px; font-size:115%; line-height:160%; padding-top:26px;}
+
+.banner {position:fixed; width:100%; min-width:1024px; height:720px; overflow:hidden; top:50px; z-index:-100;}
+
+.banner-cont {position:relative; width:100%; height:100%; overflow:hidden;}
+
+.banner-cont img {position:absolute; width:100%; height:auto; top:-9999px; bottom:-9999px; left:-9999px; right:-9999px; margin:auto;}
+
+section .wrapper {padding:90px 0px 100px 0px;}
+
+section p {line-height:3.8rem; margin-top:40px}
+
+section h2 {margin-top:20px;}
+
+.first-word, section h2 {font-size:170%; color:#2d3d67; font-family:'FuturaFont'; font-weight:700; text-transform: uppercase;}
+
+.highlite {font-size:110%; font-family:'FuturaFont'; font-weight:400;}
+
+section ul li {margin-left:-20px; line-height:3.8rem; font-weight:700; color:#2d3d67;}
+
+section ul li span {color:#FFF;}
+
+section ul li span a {color:#FFF;}
+
+.white {background:#FFF;}
+
+.blue {background:#70b2ff;}
+
+.triangle:before {content:""; width:0; height:0; position:absolute; left:1px; top:-15px;}
+
+.white .triangle:before {border-left:16px solid transparent; border-right:16px solid transparent; border-bottom: 16px solid #FFF;}
+
+.blue .triangle:before {border-left:16px solid transparent; border-right:16px solid transparent; border-bottom: 16px solid #70b2ff;}
+
+.blue p {color:#FFF;}
+
+.separador {background:#FFF; width:100%; height:1px; margin:70px 0px 80px 0px;}
+
+.primera {margin-top:700px;}
+
+.sign {margin-top:470px; width:300px; font-size:260%; font-family:'FuturaFont'; font-weight:400; letter-spacing:0.1rem; color:#FFF; line-height:115%; text-shadow:0px 0px 10px #999;}
+
+.sign span {font-size:135%; font-weight:700;}
+
+section table {width:100%;}
+
+section table td {border:none;}
+
+.hide-bullet {list-style:none;}
+
+.darkblue {color:#2d3d67;}
+
+.tableform {color:#FFF; text-align:left; border-bottom:2px solid #FFF;}
+
+.tableform tr th {border:none; background:#2d3d67; font-family:'FuturaFont'; font-weight:700; text-align:left; font-size:95%;}
+
+.blur {-webkit-filter:blur(27px); -moz-filter:blur(27px); -ms-filter:blur(27px); filter:blur(27px);}
+
+.cards {background:#fafafa; width:100%; height:100%; text-align:left; min-width:1024px;}
+
+.holder {height:100%; font-weight:400;}
+
+.card {position:relative; display:inline-block; top:1%; margin:0px 5px; text-align:center; vertical-align:top; background:#eeeeee; height:98%; overflow:hidden;}
+
+.inactive {width:40px;}
+
+.card h2 {width:480px; position:relative; display:inline-block; text-align:left; font-weight:500;}
+
+.card span {position:relative; display:inline-block; background:green; width:26px; height:26px; color:#FFF; border-radius:50%; text-align:center; line-height:26px;}
+
+.notif0 span {background:#757575;}
+
+.notif1 span {background:#dd443e;}
+
+.inactive h2 {-webkit-transform:rotate(90deg); -ms-transform:rotate(90deg); -moz-transform:rotate(90deg); transform:rotate(90deg); left:-219px; top:225px;}
+
+.expand-btn {position:relative; display:inline-block; margin:10px; cursor:pointer;}
+
+.active {width:700px;}
+
+.active span {top:-7px; left:-4px;}
+
+.active h2 {top:-6px; left:3px;}
+
+.header {position:absolute; background:#e0e0e0; width:100%; left:0px; top:0px; z-index:2000;}
+
+.inactive .header {height:100%;}
+
+.active .header {height:45px; text-align:left;}
+
+.stacks {position:relative; overflow-y:scroll; overflow-x:hidden; width:100%; height:100%;}
+
+.stack {position:relative; display:inline-block; width:97%; height:155px; background:#FFF; margin:10px 0px; text-align:left; border-radius:5px; overflow:hidden; box-shadow:0px 0px 8px #aaa;}
+
+.stack label {font-size:130%; font-weight:500;}
+
+.stack p {font-size:118%; margin:13px 20px 0px 43px; font-weight:400; line-height:165%;}
+
+.stack .footer {width:100%; height:40px; background:#eeeeee; position:absolute; bottom:0px; left:0px; padding:8px 10px;}
+
+input[type=checkbox]:not(old) {width:20px; height:20px; margin:0; padding:0; opacity:0; }
+
+input[type=checkbox]:not(old) + label {display:inline-block; margin-left:-8px; margin-top:13px; padding-left:30px; background:url('../images/check.png') no-repeat 0 0; line-height:20px;}
+
+input[type=checkbox]:not(old):checked + label {background-position: 0 -20px;}
+
+.total {font-weight:500; font-style:italic; padding:7px 16px 1px 0px; text-align:right; margin-top:45px;}
+
+.inactive .stacks {display:none;}
+
+.window {position:fixed; bottom:0px; right:50px; background:#FFF; z-index:2000; border-top-left-radius:3px; border-top-right-radius:3px; box-shadow:0px 0px 5px #ccc; overflow:hidden;}
+
+.open {width:480px;}
+
+.closed {width:280px;}
+
+.w-header {position:relative; width:100%; height:40px; background:#424242; color:#9b9b9b; padding:8px 8px 8px 16px;}
+
+.w-header h4 {float:left; font-weight:500; margin:2px; font-size:110%;}
+
+.marco {position:absolute; height:100%; width:85%; background:transparent; left:0px; top:0px;}
+
+.w-header a {float:right; margin:0px 3px; cursor:pointer;}
+
+.w-para, .w-titulo {border-bottom:1px solid #e0e0e0;}
+
+.w-para, .w-titulo, .w-mensaje {width:100%; background:#FFF;}
+
+.w-para input, .w-titulo input, .w-mensaje textarea {outline:none; width:100%; resize:none; color:#888888; padding:10px 16px;}
+
+.w-titulo input {color:#3f3f3f; font-weight:700; font-size:110%;}
+
+.w-mensaje textarea {font-size:105%; line-height:140%; height:250px;}
+
+.w-footer {height:45px; width:100%;margin-top:4px; padding:4px 10px 4px 16px;}
+
+.w-footer input[type=submit] {background:#4a90e2; border-radius:3px; padding:7px 10px; color:#FFF; outline:none; border:none; font-size:105%; float:left;}
+
+.w-footer a {padding:0px 6px; float:right; margin:5px 0px;}
+
+.closed .w-para, .closed .w-titulo, .closed .w-footer, .closed .w-mensaje {display:none;}
+
+.fol-btn {border-right:2px solid #e0e0e0;}
+
+.plus-btn {background:#dd443e; width:56px; height:56px; color:#FFF; position:fixed; right:13px; bottom:12px; border-radius:50%; line-height:69px; box-shadow:0px 0px 5px #ccc; z-index:2000;}
+
+
+
